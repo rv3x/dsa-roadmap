@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Progress Tracker</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="progress.html">Progress</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="summary">
+      <h2>Overall Progress</h2>
+      <p id="progressText">Loading...</p>
+      <div class="progress-bar-container">
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+    </section>
+    <section class="summary">
+      <h2>Daily Problem Log</h2>
+      <p>Record how many coding problems you solved today. This log will persist in your browser.</p>
+      <div class="daily-log">
+        <input type="number" id="problemInput" min="0" placeholder="Problems solved">
+        <button id="addLogBtn">Add</button>
+      </div>
+      <ul id="logList" class="task-list" style="margin-top:1rem;"></ul>
+    </section>
+    <section class="summary">
+      <h2>Week‑wise Summary</h2>
+      <div id="weekSummary"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Aryaveer Bajpai. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
